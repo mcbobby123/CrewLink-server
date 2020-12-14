@@ -7,6 +7,9 @@ import socketIO from 'socket.io';
 import Tracer from 'tracer';
 import morgan from 'morgan';
 import publicIp from 'public-ip';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const httpsEnabled = !!process.env.HTTPS;
 
